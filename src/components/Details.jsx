@@ -17,7 +17,7 @@ const Details = ({ movies }) => {
 		axios
 			.get(`https://ghibliapi.herokuapp.com/films/${id}`)
 			.then((res) => setMovie(res.data));
-		//eslint cambio
+		// eslint-disable-next-line
 	}, []);
 
 	console.log(movie);
